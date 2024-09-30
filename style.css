@@ -1,0 +1,122 @@
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border são incluídos no tamanho total dos elementos */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #393434; /* Cor de fundo do site */
+    color: #fff; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas de texto */
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+    display: flex; /* Usando Flexbox para organizar os itens do cabeçalho */
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Alinhamento vertical */
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    box-shadow: 0px 5px 20px black; /* Sombra para destacar o cabeçalho */
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 10px; /* Bordas arredondadas para o logo */
+}
+
+.menu {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Menu horizontal */
+}
+
+.menu li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.menu li a:hover {
+    background-color: #6a6969; /* Cor de fundo ao passar o mouse */
+}
+
+
+.container {
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: 0.7fr 1fr 1fr; /* Define 3 colunas, a primeira menor */
+    grid-template-rows: auto auto auto; /* Altura automática para cada linha */
+    grid-template-areas:
+        "sidenav item1 item2"
+        "sidenav item3 item4"
+        "footer footer footer"; /* Define as áreas nomeadas para cada elemento */
+    gap: 20px; /* Espaçamento entre as áreas do grid */
+    padding: 20px;
+    border: 1px solid #fff; /* Bordas para destacar o contêiner */
+}
+
+
+.sidenav {
+    grid-area: sidenav; /* Define a área do grid que a barra lateral ocupará */
+    background-color: #1E3A8A; /* Fundo azul escuro */
+    color: #F0F4FF; /* Cor do texto em azul claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px;
+}
+
+
+.item:nth-child(2) { grid-area: item1; }
+.item:nth-child(3) { grid-area: item2; }
+.item:nth-child(4) { grid-area: item3; }
+.item:nth-child(5) { grid-area: item4; }
+
+.item {
+    background-color: #ccc;
+    border-radius: 20px; /* Arredonda os cantos do item */
+    display: flex; /* Organiza o conteúdo do item como um flex container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: #6a6969;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px; /* Aumenta o tamanho do rodapé */
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer .social-icons {
+    display: flex; /* Organiza os ícones de redes sociais em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Ícones arredondados */
+}
+
