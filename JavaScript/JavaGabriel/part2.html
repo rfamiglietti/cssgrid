@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 2</title>
+</head>
+
+
+<body>
+    <script>
+    // //1. Verificação de múltiplos números:
+
+
+    // //2. Calculadora simples:
+    // let id =   Number(prompt('Digite o primeiro número'));
+    // let prov = Number(prompt('Digite o segundo número'));
+    // let nome = prompt('Digite a operação (+, -, *, /.):');
+
+
+    // //3. Número no intervalo:
+
+
+    // //4. Desconto em compras:
+
+
+    // //5. Classificação por altura:
+    // let altura =   Number(prompt('Digite a altura em cm:'));
+    // if (altura < 150) {
+    //     console.log(`Baixa`);
+    // } 
+    // else if (altura < 150) {
+    //     console.log(`normal`);
+    // } 
+    // else {
+    //     console.log(`Alta`);
+    // }
+
+
+    // //6. Verificação de senha:
+    // let senha = prompt('Digite a senha:');
+    // if (senha < 1234) {
+    //     console.log(`Acesso Permitido.`);
+    // } 
+    // else {
+    //     console.log(`Acesso Negado.`);
+    // }
+
+
+    // //7. Par ou ímpar com extra:
+    // let num = Number(prompt('Digite um número:'));
+    // if (num % 2 === 0) {
+    //     console.log(`O número é par.`);
+    // } 
+    // else {
+    //     console.log(`O número é ímpar.`);
+    //     if(num > 50){
+    //         console.log('Número especial');
+    //     }
+    // }
+
+
+    // //8. Classificação etária completa:
+    // let idade = Number(prompt('Digite sua idade:'));
+    // if (id <= 12) {
+    //     alert(`Criança`);
+    // } 
+    // else if (idade <= 17) {
+    //     alert(`Adolecente`);
+    // } 
+    // else if (idade <= 64) {
+    //     alert(`Adulto`);
+    // }
+    // else {
+    //     alert(`Idoso`);
+    // }
+    
+
+    //9. Jogo de adivinhação:
+
+
+    //10. Avaliação de desempenho:
+
+
+
+    //Desafio Final: Sistema de Avaliação de Candidatos
+    let nome = prompt('Qual seu nome?');
+    let id = Number(prompt('Qual sua idade?'));
+    let prov = Number(prompt('Pontuação na Prova Técnica?'));
+    let entre = Number(prompt('Pontuação na Entrevista?'));
+    
+
+     if (id < 18) {
+        alert(`Desculpe, ${nome}, você não atende aos critérios de idade.`);
+    } 
+    else if (prov < 7) {
+        alert(`Infelizmente, ${nome}, sua pontuação na Prova Técnica foi insuficiente`);
+    } 
+    else if (entre < 6) {
+        alert(`Infelizmente, ${nome}, sua pontuação na Entrevista foi insuficiente`);
+    }
+    else if ((prov+entre)/2 >= 8 ) {
+        alert(`Você é Altamente Qualificado!`);
+    }
+    else {
+        alert(`Parabéns,  ${nome}! Você foi aprovado para a vaga`);
+    }
+
+    </script>
+</body>
+</html>

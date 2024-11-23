@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript</title>
+</head>
+
+
+<body>
+      <!-- Aqui é o espaço do JavaScript -->
+    <script>
+
+    alert('Bem-vindo ao JavaScript!');
+    console.log("Este é o console do navegador.");
+    console.log("Você pode ver isso pressionando F12 ou Ctrl+Shift+I.");
+
+
+    // Declarando variáveis
+    let nome = "Ana";
+    let idade= 30;
+
+    // Exibindo as variáveis
+    alert("Meu nome é " + nome + " e tenho " + idade + " anos.");
+    console.log("Nome:", nome);
+    console.log("Idade:", idade);
+
+    // Pedindo o nome do usuário
+    let nomeUsuario = prompt("Qual é o seu nome?");
+
+    // Exibindo uma mensagem personalizada
+    alert("Olá, " + nomeUsuario + "! Seja bem-vindo ao JavaScript!");
+    console.log("O usuário digitou o nome:", nomeUsuario);
+
+    // Guardando dois números
+    let numero1 = prompt("Qual é o numero 1?");
+    let numero2 = prompt("Qual é o numero 2?");
+
+    // Convertendo os valores para números
+    numero1 = Number(numero1);
+    numero2 = Number(numero2);
+
+    // Calculando a soma
+    let soma = numero1 + numero2;
+
+    // Exibindo o resultado
+    alert("A soma de " + numero1 + " + " + numero2 + " é: " + soma);
+    console.log("Resultado da soma:", soma);
+
+
+    
+
+    // FUNÇÃO  if ---------------------------------------------------------------------------------
+    // Estrutura básica
+
+    if (condicao) {
+        alert("A condição é verdadeira!");
+    } else {
+        alert("A condição é falsa!");
+    }
+
+
+    //Exemplo 1: Número positivo ou negativo
+    let num = prompt("Digite um número:");
+    if (num > 0) {
+        alert("O número é positivo!");
+    } else {
+        alert("O número é negativo ou zero!");
+    }
+
+    
+    //Exemplo 2: Maior idade
+    let idd = prompt("Digite sua idade:");
+    if (idd >= 18) {
+        alert("Você é maior de idade!");
+    } else {
+        alert("Você é menor de idade!");
+    }
+
+
+    //Exemplo 3: Par ou ímpar
+    let num1 = prompt("Digite um número:");
+    if (num1 % 2 === 0) {
+        alert("O número é par!");
+    } else {
+        alert("O número é ímpar!");
+    }
+
+
+    //Exemplo 4: Adivinhe o número
+    let numeroSecreto = 5;
+    let chute = prompt("Adivinhe o número (entre 1 e 10):");
+    if (chute == numeroSecreto) {
+        alert("Você acertou!");
+    } else {
+        alert("Você errou! O número era " + numeroSecreto);
+    }
+
+
+
+
+     //FUNÇÃO     else if ------------------------------------------------------------------------
+     // Estrutura básica
+
+
+     if (condicao1) {
+         // Código executado se condicao1 for verdadeira
+     } else if (condicao2) {
+         // Código executado se condicao2 for verdadeira
+     } else if (condicao3) {
+         // Código executado se condicao3 for verdadeira
+     } else {
+         // Código executado se nenhuma condição for verdadeira
+     }
+     
+     
+     let nota = Number(prompt("Digite sua nota (0 a 10):"));
+     if (nota >= 9) {
+        alert("Excelente! Você tirou uma nota A.");
+    } else if (nota >= 7) {
+        alert("Bom trabalho! Você tirou uma nota B.");
+    } else if (nota >= 5) {
+        alert("Você tirou uma nota C. Pode melhorar.");
+    } else {
+        alert("Nota insuficiente. Você tirou uma nota D.");
+    }
+
+
+
+
+    </script>
+</body>
+
+<script src="script.js"></script>
+</html>
+

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript</title>
+</head>
+
+
+<body>
+    <script>
+    
+    // //1. Bem-vindo ao Sistema
+    // let nomeUsuario = prompt("Qual é o seu nome?");
+    // alert("Olá, " + nomeUsuario + "! Seja bem-vindo ao JavaScript!");
+    // console.log("O usuário digitou o nome:", nomeUsuario);
+
+
+    // //2. Calculadora Simples
+    // let numero1 = prompt("Qual é o numero 1?");
+    // let numero2 = prompt("Qual é o numero 2?");
+    // numero1 = Number(numero1);
+    // numero2 = Number(numero2);
+    // let soma = numero1 + numero2;
+    // alert("A soma de " + numero1 + " + " + numero2 + " é: " + soma);
+    // console.log("Resultado da soma:", soma);
+
+    
+    // //3. Descubra sua Idade
+    // let ano1 = prompt("Qual o ano atual?");
+    // let ano2 = prompt("Qual o ano que você nasceu?");
+    // ano1 = Number(ano1);
+    // ano2 = Number(ano2);
+    // let sub = ano1 - ano2;
+    // alert("Sua idade é:" + sub );
+    // console.log("Resultado da sub:", sub);
+
+    // //4. Loja de Sorvetes
+    // let quantidade = prompt('Quantos sorvetes você quer comprar?');
+    // let preco = prompt('qual é o preço de cada sorvete?');
+    // let total = Number(quantidade) * Number(preco);1
+    // alert (`O total da compra é: R$${total.toFixed(2)}`);
+
+
+    // //5. Jogo de Adivinhação
+    // let numeroSecreto = 7;
+    // let chute = prompt('Adivinhe o número secreto (entre 1 e 10)');
+    // alert(`O número secreto é 7. você chutou ${chute}.`);
+                    
+    // let numeroSecreto = Math.floor(Match.random()*10)+1;
+    // let chute = prompt('Adivinhe o número secreto (entre 1 e 10)');
+    // alert(`O número secreto é 7. você chutou ${chute}.`);
+
+
+    // //6. Exibição de Números
+    // let numeroExibicao = prompt('Digite o Primeiro número');
+    // let numero2Exibicao = prompt('Digite o segundo número');
+    // alert(`Você digitou os números ${numeroExibicao} e ${numero2Exibicao}.`);
+
+
+    // //7. Conta de Restaurante
+    // let valorConta = prompt('Qual o valor da conta?');
+    // let valorgorjeta = prompt('Qual a porcentagem de gorjeta?');
+    // let mult = (Number(valorConta)*Number(porcentagem));
+    // let totalConta = (Number(valorConta) + valorgorjeta);
+    // alert(`O valor da gorjeta é ${mult}, O total a pagar é ${total}.`);
+
+
+    // // 8. Hora da Multiplicação
+    // let valor1 = prompt('Qual o valor 1?');
+    // let Valor2 = prompt('Qual o valor 2?');
+    // let mult = (Number(valor1)*Number(valor2));
+    // alert(` A multilicação de ${valor1} * ${valor2} é: ${mult}.`);
+
+    
+    // //9. Previsão do Futuro
+    // let nome1 = prompt('Qual seu nome?');
+    // let anoA = prompt('Qual o ano atual?');
+    // let anoB = prompt('Quantos anos a frente?');
+    // let anoFinal = (Number(anoA)+Number(anoB));
+    // alert(`Olá, ${nome1}! Daqui a ${anoB} será ${anoFinal}.`);
+
+
+    // //10. Exibição de Nota
+    // let nota = prompt('Digite a nota do aluno.');
+    // alert(`A nota do aluno é ${nota}`);
+    
+    
+    //Desafio: Planejador de Compras
+    let prod  = prompt('Qual o produto desejado?');
+    let quant = prompt('Qual a quantidade a ser comprada?');
+    let unit  = prompt('Qual o preço unitário do produto?');
+    let precoFinal = (Number(quant)*Number(unit));
+    alert(`Olá, você comprou ${quant} de ${prod} por R$${unit}. Totalizando ${precoFinal} reais.`);
+    console.log(`Olá, você comprou ${quant} de ${prod} por R$${unit}. Totalizando, ${precoFinal}.`);
+
+
+
+    //Desafio Final: Calculadora de Média Simples
+    let dis    = prompt('Qual a diciplina');
+    let prova1 = prompt('Qual a nota da prova 1?');
+    let prova2 = prompt('Qual a nota da prova 2?');
+    let prova3 = prompt('Qual a nota da prova 3?');
+    let med    =  ((Number(prova1)+Number(prova2)+Number(prova3))/3);
+    alert(`Disciplina: ${dis}. \nNota Prova 1:${Prova1}. \nNota Prova 1:${Prova2}. \nNota Prova 3:${Prova3}. \nMédia das notas:${med}.`); 
+
+    </script>
+</body>
+
+<script src="script.js"></script>
+</html>
+
